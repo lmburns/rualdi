@@ -10,7 +10,7 @@
 [![Crates.io](https://img.shields.io/crates/l/rualdi/0.1.4)](https://crates.io/crates/rualdi)
 [![Codecov](https://img.shields.io/codecov/c/github/Jarsop/rualdi)](https://codecov.io/gh/Jarsop/rualdi)
 
-[![asciicast](https://asciinema.org/a/428773.svg)](https://asciinema.org/a/428773)
+![Higher quality](https://lmburns.com/gallery/media/large/rualdi.gif)
 
 The fork is adding color to the output when listing the aliases and environment variables, as well as creating an `IndexMap` that will shorten directory names based off of common environment variables.
 
