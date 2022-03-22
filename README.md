@@ -16,21 +16,10 @@ A higher quality version can be found [here](https://lmburns.com/gallery/media/l
 
 The fork is adding color to the output when listing the aliases and environment variables, as well as creating an `IndexMap` that will shorten directory names based off of common environment variables.
 
-### TODO
-* Fix/add tests now after adding colored output
-* Bash completions
-* Color the `%HASH` mapping differently
-* Add `bg`, and `TrueColor` support
-* Colors are getting erased in config
-* Set colors for `radf` function
-* Using `%HASH` in `radf` function
-* Use `fzf`: `tokio` and `async`
-
-### Table of Contents
+# Table of Contents
 
 - [Rualdi (Rust Aliasing Directory)](#rualdi-rust-aliasing-directory)
-    - [TODO](#todo)
-    - [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Examples](#examples)
   - [Getting started](#getting-started)

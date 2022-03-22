@@ -87,11 +87,17 @@ function __rualdi_colorize() {{
     local field='\(\S\+\s*\)'
     local esc=$(builtin print '\033')
     local N="${{esc}}[0m"
-    local R="${{esc}}[0;38;2;160;100;105m"
-    local G="${{esc}}[0;38;2;129;156;59m"
-    local Y="${{esc}}[0;38;2;254;128;25m"
-    local B="${{esc}}[0;38;2;76;150;168m"
-    local pattern="s#^${{field}}${{field}}${{field}}#$Y\1$R\2$N$B\3$N#"
+
+    # local R="${{esc}}[0;38;2;160;100;105m"
+    # local G="${{esc}}[0;38;2;129;156;59m"
+    # local Y="${{esc}}[0;38;2;254;128;25m"
+    # local B="${{esc}}[0;38;2;76;150;168m"
+
+    local R="${{esc}}[31m"
+    local G="${{esc}}[32m"
+    local Y="${{esc}}[33m"
+    local B="${{esc}}[34m"
+    local pattern="s#^${{field}}${{field}}${{field}}#$R\1$Y\2$N$B\3$N#"
     (( $+commands[gsed] )) && gsed "$pattern" || sed "$pattern"
 }}
 
@@ -243,3 +249,5 @@ unset OLDIFS
 
     Ok(())
 }
+
+// vim: ft=rust:et:sw=0:ts=2:sts=2:fdm=marker:fmr=[[[,]]]:
